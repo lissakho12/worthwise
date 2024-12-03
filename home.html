@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color:#f6efea;
+		}
+		#kilid{
+			position: fixed;
+			margin-top:-px17;
+  			height:775px;
+		    width: 300px;
+		    border:1px solid #ede0d4;
+		    background-color: #ede0d4;
+		}
+			#logo{
+			width:120px;
+			margin-top:14px;
+			margin-left:px;
+			display:flex;
+		}
+		#ulo{
+			font-family:arial;
+			margin-left:114px;
+			margin-top:-55px;
+			font-size:20px;
+			display:flex;
+		}
+		#name{
+			list-style:none;
+			margin-top:113px;
+			margin-left:9px;
+		}
+		a{
+			text-decoration:none;
+			color: black;
+		}
+		li{
+			
+			font-family:arial;
+			font-size:20px;
+			margin-top:50px;
+			margin-left:-30;
+		}
+		li:hover{
+			font-weight:bold;
+			font-family:arial;
+		}
+		* {box-sizing: border-box}
+		body {font-family: arial, sans-serif; margin:0}
+
+		.mySlides {display: none}
+		img {vertical-align: middle;}
+
+		.slideshow-container {
+		  width: 1230px;
+		  position: relative;
+		  margin:0px 290px 0px 300px;
+		}
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+		.numbertext {
+		  color:black;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+		.dot {
+		  cursor:pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 3px;
+		  background-color: #ede0d4;
+		  border-radius: 90%;
+		  display: inline-block;
+		  transition: background-color 0.6s pink;
+		}
+
+		.active, .dot:hover {
+		  background-color:#B96A59;
+		}
+
+		
+		.fade {
+		  animation-name: fade;
+		  animation-duration: 1.6s;
+		}
+
+		@keyframes fade {
+		  from {opacity: .1} 
+		  to {opacity: 1}
+		}
+		#pic1{
+			width:320px;
+			height:202px;
+			margin-left:360px;
+			margin-top:60px;
+		}
+		#pic2{
+			width:320px;
+			margin-top:60px;
+			margin-left:30px;
+		}
+		#pic3{
+			width:320px;
+			margin-top:60px;
+			margin-left:30px;
+		}
+		#pic4{
+			width:320px;
+			margin-left:360px;
+			margin-top:20px;
+		}
+		#pic5{
+			width:320px;
+			height:202px;
+			margin-left:30px;
+			margin-top:20px;
+		}
+		#pic6{
+			width:320px;
+			margin-left:30px;
+			margin-top:20px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="kilid">
+		<div>
+			<img id="logo" src="w.png">
+			<p id="ulo">WORTHWISE</p>
+				<ul id="name">
+					<li>
+						<p><a href="file:///C:/Users/ellie/OneDrive/Desktop/financial.blog/home.html">HOME</a></p>
+					</li>
+					<li>
+						<p><a href="file:///C:/Users/ellie/OneDrive/Desktop/financial.blog/dashboard.html">DASHBOARD</a></p>
+					</li>
+					<li>ANALIYTICS</li>
+					<li>WALLET</li>
+					<li>
+						<p><a href="file:///C:/Users/ellie/OneDrive/Desktop/financial.blog/account.html">ACCOUNT</a></p>
+					</li>
+					<li> 
+						<p><a href="file:///C:/Users/ellie/OneDrive/Desktop/financial.blog/about-us.html">ABOUT US</a></p>
+					</li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+			<img src="slide1.jpg" style="width:1230px; height:400px;">
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+			<img src="slide2.png" style="width:1230px; height:400px;">
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+			<img src="slide3.jpg" style="width:1230px; height:400px;">
+	</div>
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+	</div>
+		<br>
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	<div>
+		<img id="pic1" src="pic1.jpg">
+		<img id="pic2" src="pic2.jpg">
+		<img id="pic3" src="pic3.jpg">
+		<img id="pic4" src="pic4.jpg">
+		<img id="pic5" src="pic5.jpg">
+		<img id="pic6" src="pic6.jpg">
+	</div>
+
+
+	<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
+</body>
+</html>
